@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Disable concurrent to run `check-types` after ESLint in lint-staged
+npx --no-install lint-staged --concurrent false
