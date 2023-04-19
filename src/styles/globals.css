@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* #region  /**=========== Primary Color =========== */
+  --tw-color-primary-50: 237 245 255;
+  --tw-color-primary-100: 221 234 255;
+  --tw-color-primary-200: 198 222 255;
+  --tw-color-primary-300: 163 203 255;
+  --tw-color-primary-400: 103 163 255;
+  --tw-color-primary-500: 46 104 255;
+  --tw-color-primary-600: 18 74 223;
+  --tw-color-primary-700: 17 61 199;
+  --tw-color-primary-800: 19 51 159;
+  --tw-color-primary-900: 16 38 109;
+  --color-primary-50: rgb(var(--tw-color-primary-50)); /* #edf5ff */
+  --color-primary-100: rgb(var(--tw-color-primary-100)); /* #ddeaff */
+  --color-primary-200: rgb(var(--tw-color-primary-200)); /* #c6deff */
+  --color-primary-300: rgb(var(--tw-color-primary-300)); /* #a3cbff */
+  --color-primary-400: rgb(var(--tw-color-primary-400)); /* #67a3ff */
+  --color-primary-500: rgb(var(--tw-color-primary-500)); /* #2e68ff */
+  --color-primary-600: rgb(var(--tw-color-primary-600)); /* #124adf */
+  --color-primary-700: rgb(var(--tw-color-primary-700)); /* #113dc7 */
+  --color-primary-800: rgb(var(--tw-color-primary-800)); /* #13339f */
+  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #10266d */
+  /* #endregion  /**======== Primary Color =========== */
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url('/fonts/inter-var-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Alibaba PuHuiTi';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.eot'); /* IE9*/
+    src: url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.eot?#iefix')
+    format('embedded-opentype'),
+      /* IE6-IE8 */
+    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.woff2')
+    format('woff2'),
+      /* chrome、firefox */
+    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.woff')
+    format('woff'),
+      /* chrome、firefox */
+    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.ttf')
+    format('truetype'),
+      /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.svg#Alibaba PuHuiTi')
+    format('svg'); /* iOS 4.1- */
+  }
+
+  @font-face {
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url('/fonts/pingfang-sc/5c7613702e980cd8899ec6d18b162b59.eot'); /* IE9*/
+    src: url('/fonts/pingfang-sc/5c7613702e980cd8899ec6d18b162b59.eot?#iefix')
+    format('embedded-opentype'),
+      /* IE6-IE8 */
+    url('/fonts/pingfang-sc/5c7613702e980cd8899ec6d18b162b59.woff2')
+    format('woff2'),
+      /* chrome、firefox */
+    url('/fonts/pingfang-sc/5c7613702e980cd8899ec6d18b162b59.woff')
+    format('woff'),
+      /* chrome、firefox */
+    url('/fonts/pingfang-sc/5c7613702e980cd8899ec6d18b162b59.ttf')
+    format('truetype'),
+      /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('/fonts/pingfang-sc/5c7613702e980cd8899ec6d18b162b59.svg#sc')
+    format('svg'); /* iOS 4.1- */
+  }
+
+  /* #region  /**=========== Typography =========== */
+  .h0 {
+    @apply font-primary text-3xl font-bold md:text-5xl;
+  }
+
+  h1,
+  .h1 {
+    @apply font-primary text-2xl font-bold md:text-4xl;
+  }
+
+  h2,
+  .h2 {
+    @apply font-primary text-xl font-bold md:text-3xl;
+  }
+
+  h3,
+  .h3 {
+    @apply font-primary text-lg font-bold md:text-2xl;
+  }
+
+  h4,
+  .h4 {
+    @apply font-primary text-base font-bold md:text-lg;
+  }
+
+  body,
+  .p {
+    @apply font-primary text-sm md:text-base;
+  }
+
+  body {
+    @apply bg-white text-black;
+  }
+}
