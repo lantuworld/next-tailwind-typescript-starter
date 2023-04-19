@@ -9,7 +9,7 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
     <>
         {props.meta}
-        <main className="content py-5 text-xl">{props.children}</main>
+        <main className="content md:py-5 lg:px-3 xl:px-1 text-xl">{props.children}</main>
     </>
 );
 
