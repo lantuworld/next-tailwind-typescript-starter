@@ -1,4 +1,3 @@
-///<reference path="../../node_modules/cypress/types/cypress-global-vars.d.ts"/>
 describe('Seo metadata', () => {
   describe('Verify SEO Metadata', () => {
     it('should render SEO metadata on Index page', () => {
