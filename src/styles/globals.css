@@ -40,28 +40,6 @@
   }
 
   @font-face {
-    font-family: 'Alibaba PuHuiTi';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.eot'); /* IE9*/
-    src: url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.eot?#iefix')
-    format('embedded-opentype'),
-      /* IE6-IE8 */
-    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.woff2')
-    format('woff2'),
-      /* chrome、firefox */
-    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.woff')
-    format('woff'),
-      /* chrome、firefox */
-    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.ttf')
-    format('truetype'),
-      /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('/fonts/alibaba-puhuiti/b8d2d7f8b403c8fd9c4e74125414167f.svg#Alibaba PuHuiTi')
-    format('svg'); /* iOS 4.1- */
-  }
-
-  @font-face {
     font-family: 'PingFang SC';
     font-style: normal;
     font-weight: 100 900;

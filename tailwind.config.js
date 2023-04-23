@@ -6,7 +6,6 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['PingFang SC', 'Inter', ...defaultTheme.fontFamily.sans],
-        alipuhui: 'Alibaba PuHuiTi',
       },
       fontSize: {
         xs: '0.75rem',
