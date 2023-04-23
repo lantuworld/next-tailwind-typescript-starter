@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 type IMainProps = {
@@ -9,9 +8,7 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
   <>
     {props.meta}
-    <main className="content md:py-5 lg:px-3 xl:px-1 text-xl">
-      {props.children}
-    </main>
+    <main className="text-xl md:py-5 lg:px-3 xl:px-1">{props.children}</main>
   </>
 );
 

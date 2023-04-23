@@ -1,6 +1,5 @@
-import Meta from '@/components/layouts/meta/Meta';
 import Main from '@/components/layouts/main/Main';
-
+import Meta from '@/components/layouts/meta/Meta';
 import { AppConfig } from '@/utils/AppConfig';
 
 export default function Home() {

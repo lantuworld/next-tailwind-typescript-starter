@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
+import React from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
 
@@ -11,43 +11,41 @@ type IMetaProps = {
 };
 
 const Meta = (props: IMetaProps) => {
-  const router = useRouter();
-
   const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     {
       rel: 'apple-touch-icon',
       sizes: '180x180',
-      href: router.basePath + '/favicon/apple-touch-icon.png',
+      href: '/favicon/apple-touch-icon.png',
       key: 'apple',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '32x32',
-      href: router.basePath + '/favicon/favicon-32x32.png',
+      href: '/favicon/favicon-32x32.png',
       key: 'icon32',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '16x16',
-      href: router.basePath + '/favicon/favicon-16x16.png',
+      href: '/favicon/favicon-16x16.png',
       key: 'icon16',
     },
     {
       rel: 'manifest',
-      href: router.basePath + '/favicon/site.webmanifest',
+      href: '/favicon/site.webmanifest',
       key: 'manifest',
     },
     {
       rel: 'mask-icon',
-      href: router.basePath + '/favicon/safari-pinned-tab.svg',
+      href: '/favicon/safari-pinned-tab.svg',
       color: '#00e887',
       key: 'safariPinnedTab',
     },
     {
       rel: 'shortcut icon',
-      href: router.basePath + '/favicon/favicon.ico',
+      href: '/favicon.ico',
       key: 'icon',
     },
   ];
