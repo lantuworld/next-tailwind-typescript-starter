@@ -4,13 +4,13 @@ import React from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
 
-type IMetaProps = {
+export interface IMetaProps {
   title: string;
   description: string;
   canonical?: string;
-};
+}
 
-const Meta = (props: IMetaProps) => {
+const MetaLayout: React.FC<IMetaProps> = (props: IMetaProps) => {
   const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     {
       rel: 'apple-touch-icon',
@@ -78,4 +78,4 @@ const Meta = (props: IMetaProps) => {
     </>
   );
 };
-export default Meta;
+export default MetaLayout;

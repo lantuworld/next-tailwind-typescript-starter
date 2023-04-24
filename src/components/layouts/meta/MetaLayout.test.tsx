@@ -1,7 +1,7 @@
 import { render, waitFor } from '@testing-library/react';
 import type { ReactNode } from 'react';
 
-import Meta from './Meta';
+import MetaLayout from './MetaLayout';
 
 // Mock `next/head`: https://bradgarropy.com/blog/mocking-nextjs
 jest.mock(
@@ -12,12 +12,12 @@ jest.mock(
     }
 );
 
-describe('Meta component', () => {
+describe('MetaLayout component', () => {
   describe('Render method', () => {
     it('should a page title', async () => {
       const title = 'Random title';
 
-      render(<Meta title={title} description="Random description" />);
+      render(<MetaLayout title={title} description="Random description" />);
 
       await waitFor(() => {
         expect(document.title).toEqual(title);
